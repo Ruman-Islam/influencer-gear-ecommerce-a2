@@ -1,0 +1,143 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Raleway:wght@500&display=swap");
+
+/* Common Styles & Stuffs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Oxygen", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "candara", sans-serif;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: #e03b8b;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.navigations {
+  display: flex;
+}
+.navigations li {
+  list-style: none;
+  margin-left: 30px;
+}
+.navigations li > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+}
+.banner-left {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.banner-left h1 {
+  font-size: 50px;
+  width: 70%;
+}
+.banner-left p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 70%;
+}
+.banner-right {
+  flex: 2;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-right img {
+  width: 95%;
+}
+.primary-button {
+  outline: 0;
+  border: 0;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+}
+
+/* Products */
+.section-title {
+  margin: 50px 0;
+  font-size: 25px;
+  text-align: center;
+}
+.products {
+  /* width: 90%; */
+  display: grid;
+  margin: 0 auto;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.product {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+}
+.product-thumbnail img {
+  width: 100%;
+}
+.product-rating {
+  margin: 10px 0;
+  color: goldenrod;
+}
+#seeMore-btn {
+  text-align: right;
+  margin-right: 80px;
+  margin-top: 20px;
+}
+#seeMore-btn a {
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 650px);
+  background-color: #0a0826;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}
