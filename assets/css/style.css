@@ -92,7 +92,7 @@ nav {
   text-align: center;
 }
 .products {
-  /* width: 90%; */
+  width: 80%;
   display: grid;
   margin: 0 auto;
   grid-row-gap: 30px;
