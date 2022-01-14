@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 :root {
-  --primary-color: #e03b8b;
+  --primary-color: #8d3daf;
 }
 
 /* Nav */
@@ -137,7 +137,7 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-color);
   font-size: 18px;
   margin-left: 10px;
 }
