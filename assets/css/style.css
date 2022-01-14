@@ -84,6 +84,10 @@ nav {
   margin-top: 10px;
   background-color: var(--primary-color);
 }
+.primary-button:hover {
+  background-color: #7d11ac;
+  transition: 0.2s ease-in;
+}
 
 /* Products */
 .section-title {
@@ -122,6 +126,57 @@ nav {
   font-weight: 900;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+/* Community */
+.community {
+  width: 100%;
+  height: 50vh;
+  margin-top: 20px;
+  background-color: #ee7d76;
+}
+.community-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+.community-left {
+  color: #fff;
+}
+.community-left h1 {
+  font-size: 40px;
+}
+.community-left,
+.community-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  text-align: justify;
+}
+.community-right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.community-right form > input {
+  outline: 0;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.community-right form > input:focus {
+  border: 1px solid var(--primary-color);
 }
 
 /* Footer */
