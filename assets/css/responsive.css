@@ -69,6 +69,8 @@
     font-size: 35px;
   }
   #banner .banner-right {
+    background-position: 35px;
+    margin-bottom: 20px;
     text-align: center;
     order: -1;
   }

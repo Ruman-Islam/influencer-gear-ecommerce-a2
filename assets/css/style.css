@@ -69,7 +69,7 @@ nav {
   flex: 2;
   background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .banner-right img {
   width: 80%;
