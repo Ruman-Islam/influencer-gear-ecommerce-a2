@@ -1,4 +1,7 @@
-/* FOR LARGE MOBILE AND TABLET */
+/* .............................................
+          FOR LARGE MOBILE AND TABLET
+.............................................. */
+
 @media (max-width: 820px) {
   .container {
     width: 100%;
@@ -43,7 +46,9 @@
   /* ....... Footer End....... */
 }
 
-/* FOR MOBILE AND SMALLER DEVICE */
+/* .............................................
+          FOR MOBILE AND SMALLER DEVICE
+.............................................. */
 @media (max-width: 480px) {
   .container {
     width: 100%;
