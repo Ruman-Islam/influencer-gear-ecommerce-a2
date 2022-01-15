@@ -1,0 +1,81 @@
+@media (max-width: 820px) {
+  .container {
+    width: 100%;
+  }
+  /* .......Header Start...... */
+  nav .navigations {
+    display: none;
+  }
+  /* .......Header End...... */
+
+  /* ........Banner Start........ */
+  #banner .banner-left h1 {
+    font-size: 1.6rem;
+  }
+  #banner .banner-left p {
+    font-size: 0.8rem;
+  }
+  #banner .banner-right img {
+    width: 80%;
+  }
+  /* ........Banner End........ */
+
+  /* ....... Products Start....... */
+  .container .products {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .products .product {
+    width: 250px;
+  }
+  /* ....... Products End....... */
+
+  /* ....... Footer Start....... */
+  #footer {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  /* ....... Footer End....... */
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  /* .......Header Start...... */
+  nav .navigations {
+    display: none;
+  }
+  /* .......Header End...... */
+
+  /* ........Banner Start........ */
+  #banner {
+    flex-direction: column;
+  }
+  #banner .banner-left {
+    order: 1;
+  }
+  #banner .banner-left h1 {
+    font-size: 35px;
+  }
+  #banner .banner-right {
+    order: -1;
+  }
+  #banner .banner-right img {
+    width: 80%;
+  }
+  /* ........Banner End........ */
+
+  /* ....... Products Start....... */
+  .container .products {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ....... Products End....... */
+
+  /* ....... Footer Start....... */
+  #footer {
+    font-size: 0.8rem;
+  }
+  /* ....... Footer End....... */
+}

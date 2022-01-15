@@ -18,6 +18,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 0.6rem;
 }
 :root {
   --primary-color: #8d3daf;
@@ -44,12 +45,13 @@ nav {
 }
 
 /* Banner */
-.banner {
+#banner {
   display: flex;
 }
 .banner-left {
   display: flex;
   flex: 3;
+  /* flex-basis: 100%; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -65,12 +67,13 @@ nav {
 }
 .banner-right {
   flex: 2;
+  /* flex-basis: 100%; */
   background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .banner-right img {
-  width: 95%;
+  width: 80%;
 }
 .primary-button {
   outline: 0;
@@ -96,15 +99,17 @@ nav {
   text-align: center;
 }
 .products {
-  width: 80%;
   display: grid;
+  width: 80%;
   margin: 0 auto;
   grid-row-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 .product {
-  width: 300px;
+  width: 290px;
   padding: 10px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -128,67 +133,17 @@ nav {
   color: var(--primary-color);
 }
 
-/* Community */
-.community {
-  width: 100%;
-  height: 50vh;
-  margin-top: 20px;
-  background-color: #ee7d76;
-}
-.community-container {
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  height: 100%;
-}
-.community-left {
-  color: #fff;
-}
-.community-left h1 {
-  font-size: 40px;
-}
-.community-left,
-.community-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  text-align: justify;
-}
-.community-right form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 50%;
-  background-color: #fff;
-  padding: 15px 10px;
-  border-radius: 5px;
-}
-.community-right form > input {
-  outline: 0;
-  padding: 10px;
-  border: 1px solid lightgray;
-  margin: 15px 0;
-  border-radius: 10px;
-  font-size: 15px;
-}
-.community-right form > input:focus {
-  border: 1px solid var(--primary-color);
-}
-
 /* Footer */
 footer {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: calc(100vh - 650px);
+
+  height: 200px;
   background-color: #0a0826;
   color: #fff;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
 footer a {
   text-decoration: none;
