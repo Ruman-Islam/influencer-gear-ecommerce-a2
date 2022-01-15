@@ -21,7 +21,7 @@ body {
   padding: 0 0.6rem;
 }
 :root {
-  --primary-color: #8d3daf;
+  --primary-color: #1b98f5;
 }
 
 /* Nav */
@@ -51,7 +51,6 @@ nav {
 .banner-left {
   display: flex;
   flex: 3;
-  /* flex-basis: 100%; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -67,7 +66,6 @@ nav {
 }
 .banner-right {
   flex: 2;
-  /* flex-basis: 100%; */
   background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +86,7 @@ nav {
   background-color: var(--primary-color);
 }
 .primary-button:hover {
-  background-color: #7d11ac;
+  background-color: #007edf;
   transition: 0.2s ease-in;
 }
 
@@ -102,6 +100,7 @@ nav {
   display: grid;
   width: 80%;
   margin: 0 auto;
+  grid-column-gap: 10px;
   grid-row-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -131,6 +130,45 @@ nav {
   font-weight: 900;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+/* Contact */
+#contact {
+  text-align: justify;
+  margin: 100px 0;
+}
+#contact h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 10px; */
+}
+.contact-left img {
+  width: 80%;
+}
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-right form input {
+  outline: 0;
+  border: 1px solid lightgray;
+  padding: 20px 10px;
+  margin: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.contact-right form input:focus {
+  border: 1px solid var(--primary-color);
+}
+#contact p {
+  color: gray;
+  font-size: 1.1rem;
+  font-family: "Oxygen", sans-serif;
 }
 
 /* Footer */

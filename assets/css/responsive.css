@@ -73,6 +73,14 @@
   }
   /* ....... Products End....... */
 
+  /* .........Contact........ */
+  #contact .contact-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .contact-form p {
+    font-size: 0.8rem;
+  }
+
   /* ....... Footer Start....... */
   #footer {
     font-size: 0.8rem;
