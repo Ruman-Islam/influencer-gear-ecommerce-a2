@@ -1,3 +1,4 @@
+/* FOR LARGE MOBILE AND TABLET */
 @media (max-width: 820px) {
   .container {
     width: 100%;
@@ -42,6 +43,7 @@
   /* ....... Footer End....... */
 }
 
+/* FOR MOBILE AND SMALLER DEVICE */
 @media (max-width: 480px) {
   .container {
     width: 100%;
@@ -86,7 +88,7 @@
   }
   /* ....... Products End....... */
 
-  /* .........Contact........ */
+  /* .........Contact start........ */
   #contact .contact-form {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -96,6 +98,7 @@
   #contact .contact-form p {
     font-size: 0.8rem;
   }
+  /* .........Contact end........ */
 
   /* ....... Footer Start....... */
   #footer {
