@@ -3,17 +3,18 @@
     width: 100%;
   }
   /* .......Header Start...... */
-  nav .navigations {
-    display: none;
+  nav .navigations li {
+    font-size: 18px;
+    margin-left: 15px;
   }
   /* .......Header End...... */
 
   /* ........Banner Start........ */
   #banner .banner-left h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
   #banner .banner-left p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   #banner .banner-right img {
     width: 80%;
