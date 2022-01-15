@@ -29,7 +29,10 @@
     width: 250px;
   }
   /* ....... Products End....... */
-
+  #contact .contact-form .contact-left img {
+    width: 70%;
+    object-fit: cover;
+  }
   /* ....... Footer Start....... */
   #footer {
     width: 100%;
@@ -51,14 +54,21 @@
   /* ........Banner Start........ */
   #banner {
     flex-direction: column;
+    align-items: center;
+    align-content: center;
   }
   #banner .banner-left {
     order: 1;
+    align-items: center;
+    align-content: center;
+    text-align: center;
   }
   #banner .banner-left h1 {
+    width: 100%;
     font-size: 35px;
   }
   #banner .banner-right {
+    text-align: center;
     order: -1;
   }
   #banner .banner-right img {
@@ -76,6 +86,9 @@
   /* .........Contact........ */
   #contact .contact-form {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .contact-form .contact-left img {
+    width: 100%;
   }
   #contact .contact-form p {
     font-size: 0.8rem;

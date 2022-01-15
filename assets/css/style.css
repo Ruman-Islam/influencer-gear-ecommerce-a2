@@ -73,21 +73,44 @@ nav {
 .banner-right img {
   width: 80%;
 }
+
 .primary-button {
   outline: 0;
-  border: 0;
+  display: inline-block;
+  text-decoration: none;
   font-size: 15px;
-  padding: 10px 20px;
-  color: #fff;
   font-weight: 600;
-  border-radius: 50px;
   cursor: pointer;
   margin-top: 10px;
-  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
 }
 .primary-button:hover {
-  background-color: #007edf;
-  transition: 0.2s ease-in;
+  color: #fff;
+}
+.primary-button,
+.primary-button::before {
+  transition: 0.5s ease-in-out;
+}
+.primary-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  border-radius: 50px;
+  background: var(--primary-color);
+  opacity: 0;
+  z-index: -1;
+}
+.primary-button:hover::before {
+  width: 100%;
+  opacity: 1;
 }
 
 /* Products */
@@ -118,8 +141,13 @@ nav {
   width: 100%;
 }
 .product-rating {
+  display: inline-block;
   margin: 10px 0;
-  color: goldenrod;
+  color: var(--primary-color);
+}
+.product small {
+  font-size: 18px;
+  margin-left: 10px;
 }
 #seeMore-btn {
   text-align: right;
@@ -175,7 +203,6 @@ nav {
 footer {
   display: flex;
   flex-direction: column;
-
   height: 200px;
   background-color: #0a0826;
   color: #fff;
